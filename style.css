@@ -330,6 +330,70 @@ body {
 }
 
 .yellow-line{
-    stroke:yellow;
+    stroke:rgb(177, 121, 0);
     stroke-width: 2px;
+}
+
+.legends2{
+    top:90px;
+    right: 60px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.sd{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 10px;
+    font-size: x-small;
+}
+
+.button4{
+    border: 1px solid #8be9fd;
+}
+
+.button4:hover{
+    background-color: #8be9fd;
+    color: #333;
+    font-size: medium;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.button5{
+    border: 1px solid #ff5555;
+}
+
+.node{
+    cursor: grab;
+}
+
+.button5:hover{
+    background-color: #ff5555;
+    color: #333;
+    font-size: medium;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.clicked4{
+    background-color: #8be9fd;
+    color: #333;
+    font-size: medium;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+
+.clicked5{
+    background-color: #ff5555;
+    color: #333;
+    font-size: medium;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+
+#co2{
+    border: 1px solid steelblue;
 }
