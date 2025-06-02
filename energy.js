@@ -37,6 +37,7 @@ elect.addEventListener('click', ()=>{
         gas.classList.add('elect');
         elect.classList.add('button-elect');
 
+        elect.classList.remove('button-gas');
         if(gas.classList.contains('button-gas')){
             gas.classList.remove('gas');
             gas.classList.remove('button-gas');
