@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Charts</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Poverty segment -->
+  <div class="segment">
+    <div class="description-container">
+      <div class="sdg-title">No Poverty</div>
+    </div>
+    <div class="chart-container">
+      <div class="chart-title">Predicted Self-Rated Poverty Count in the Philippines</div>
+      <div id="chart" class="chart"></div>
+      <div class="tooltip"></div>
+    </div>
+    <div class="buttons">
+      <div class="left">
+        Start:
+        <input id="start" type="number" value="2021">
+        End:
+        <input id="end" type="number" value="2030">
+      </div>
+      <div class="right">
+        <div class="button clicked" id="poor">
+          Poor
+        </div>
+        <div class="button" id="not-poor">
+          Not Poor
+        </div>
+        <div class="button" id="borderline">
+          Borderline
+        </div>
+      </div>
+    </div>
+    <script type="" src="poverty.js"></script>
+  </div>
+  
+  <div class="segment">
+    <div class="description-container">
+      <div class="sdg-title">Zero Hunger</div>
+    </div>
+    <div class="chart-container">
+      <div class="chart-title">Global Hunger Index Scores of the Philippines Over the Years</div>
+      <div id="chart2" class="chart"></div>
+      <div class="tooltip2"></div>
+    </div>
+    <div class="buttons center">
+      <div class="box orange"></div> Serious
+      <div class="box yellow"></div> Moderate
+    </div>
+    <script type="module" src="hunger.js"></script>
+  </div>
+
+  <div class="segment">
+    <div class="description-container">
+      <div class="sdg-title">Good Health and Well-Being</div>
+    </div>
+    <div class="chart-container">
+      
+      <div class="chart-title">Health Care Facillity Density and Deaths per Region </div>
+      <div id="chart3" class="chart"></div>
+      <div class="tooltip3"></div>
+      <div class="legends">Death Count per Region</div>
+      <div class="button clicked2" id="show-death">Show Death Count</div>
+    </div>
+    <div class="buttons">
+      <div class="left">
+        Health Care Facility Density
+      </div>
+      <div class="right health">
+        0-1.264<div class="box scale1a"></div> 
+        1.265-2.528<div class="box scale2b"></div> 
+        2.529-3.792<div class="box scale3c"></div> 
+        3.793-5.056<div class="box scale4d"></div> 
+        5.057-6.32<div class="box scale5e"></div> 
+      </div>
+    </div>
+    <script type="module" src="health.js"></script>
+  </div>
+  
+  <div class="segment">
+    <div class="description-container">
+      <div class="sdg-title">Affordable and Clean Energy</div>
+    </div>
+    
+    <div class="chart-container">
+      <div class="tooltip4"></div>
+      <div class="chart-title">Gas and Electricity Monthly Price Prediction</div>
+      <div id="chart4" class="chart2"></div>
+      
+
+    </div>
+    <div class="buttons">
+      <div class="left">
+        Lower Bound: <div class="bound" id="lower-bound"></div>
+        Upper Bound: <div class="bound" id="upper-bound"></div>
+      </div>
+      <div class="right">
+        <div class="button3 clicked3" id="gas">
+          Gas (RON 95)
+        </div>
+        <div class="button3" id="elec">
+          Electricity 
+        </div>
+      </div>
+    </div>
+    <script type="module" src="energy.js"></script>
+  </div>
+</body>
+</html>
